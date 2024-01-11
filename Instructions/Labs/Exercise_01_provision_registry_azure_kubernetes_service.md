@@ -33,10 +33,10 @@ Nesta tarefa, você criará um Registro de Contêiner do Azure
 
     |Configuração|Valor|
     |---|---|
-    |Subscription|O nome da assinatura do Azure que você usará neste laboratório|
+    |Assinatura|O nome da assinatura do Azure que você usará neste laboratório|
     |Grupo de recursos|O nome de um novo grupo de recursos **acr-01-RG**|
     |Nome do registro|Qualquer nome válido e globalmente exclusivo que contenha entre 5 e 50 caracteres alfanuméricos|
-    |Região|Qualquer região do Azure na qual você pode criar um Registro de Contêiner do Azure e um cluster do AKS|
+    |Region|Qualquer região do Azure na qual você pode criar um Registro de Contêiner do Azure e um cluster do AKS|
     |Zonas de disponibilidade|**Nenhuma**|
     |SKU|**Basic**|
 
@@ -54,10 +54,10 @@ Nesta tarefa, você criará uma rede virtual do Azure e implantará um cluster d
 
     |Configuração|Valor|
     |---|---|
-    |Subscription|O nome da assinatura do Azure selecionada no primeiro exercício deste laboratório|
+    |Assinatura|O nome da assinatura do Azure selecionada no primeiro exercício deste laboratório|
     |Grupo de recursos|O nome de um novo grupo de recursos **aks-01-RG**|
     |Nome da rede virtual|**vnet-01**|
-    |Região|A mesma região do Azure selecionada no primeiro exercício deste laboratório|
+    |Region|A mesma região do Azure selecionada no primeiro exercício deste laboratório|
 
 1. Na guia **Noções básicas** da página **Criar rede virtual**, selecione **Avançar**.
 1. Na guia **Segurança** da página **Criar rede virtual**, aceite as configurações padrão e selecione **Avançar**.
@@ -70,15 +70,15 @@ Nesta tarefa, você criará uma rede virtual do Azure e implantará um cluster d
 
     |Configuração|Valor|
     |---|---|
-    |Subscription|O nome da assinatura do Azure selecionada no primeiro exercício deste laboratório|
+    |Assinatura|O nome da assinatura do Azure selecionada no primeiro exercício deste laboratório|
     |Grupo de recursos|**aks-01-RG**|
     |Configuração predefinida do cluster|**Desenvolvimento/Teste**|
     |Nome do cluster do Kubernetes|**aks-01**|
-    |Região|A mesma região do Azure selecionada no primeiro exercício deste laboratório|
+    |Region|A mesma região do Azure selecionada no primeiro exercício deste laboratório|
     |Zonas de disponibilidade|**Nenhuma**|
     |Tipo de preço do AKS|**Gratuito**|
     |Versão do Kubernetes|Aceitar o valor padrão|
-    |Atualização automática|Desabilitado|
+    |Atualização automática|Desabilitadas|
     |Tamanho do nó|**B4ms Standard**|
     |Método de dimensionamento|**Manual**|
     |Contagem de nós|**2**|
@@ -106,8 +106,8 @@ Nesta tarefa, você criará uma rede virtual do Azure e implantará um cluster d
     |Intervalo de endereços de serviço do Kubernetes|**172.16.0.0/22**|
     |Endereço IP do serviço DNS do Kubernetes|**172.16.3.254**|
     |Prefixo do nome DNS|**aks-01-dns**|
-    |Habilitar o cluster privado|Desabilitado|
-    |Definir os intervalos de IP autorizados|Desabilitado|
+    |Habilitar o cluster privado|Desabilitadas|
+    |Definir os intervalos de IP autorizados|Desabilitadas|
     |Política de rede|**Nenhuma**|
 
 1. Na guia **Rede** da página **Criar cluster do Kubernetes**, selecione a guia **Pools de nós**.
@@ -120,15 +120,15 @@ Nesta tarefa, você criará uma rede virtual do Azure e implantará um cluster d
     |Configuração|Valor|
     |---|---|
     |Nome do pool de nós|**w1pool**|
-    |Mode|**Usuário**|
+    |Modo|**Usuário**|
     |Tipo do SO|**Windows**|
     |Zona de disponibilidade|**Nenhuma**|
-    |Habilitar instâncias spot do Azure|Desabilitado|
+    |Habilitar instâncias spot do Azure|Desabilitadas|
     |Tamanho do nó|**Standard B4s_v2**|
     |Método de dimensionamento|**Manual**|
     |Contagem de nós|**2**|
     |Pods máx por nó|**30**|
-    |Habilitar IP público por nó|Desabilitado|
+    |Habilitar IP público por nó|Desabilitadas|
 
    > **Observação:** talvez seja necessário aumentar as cotas de vCPU ou alterar a SKU da VM para acomodar o tamanho do nó e os valores de contagem de nós. Para obter informações sobre o procedimento para aumentar as cotas de vCPU, confira o artigo do Microsoft Learn [Aumentar cotas de vCPU da família de VMs](https://learn.microsoft.com/en-us/azure/quotas/per-vm-quota-requests).
 

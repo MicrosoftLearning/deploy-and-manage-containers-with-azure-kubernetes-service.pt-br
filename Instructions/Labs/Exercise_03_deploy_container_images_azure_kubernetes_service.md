@@ -9,18 +9,18 @@ Exercise:
 
 Este projeto guiado consiste nos seguintes exercícios:
 
-+ Exercício 1: provisionar o Registro de Contêiner do Azure (ACR) e o Serviço de Kubernetes do Azure (AKS).
++ Exercício 1: Provisionar Registro de Contêiner do Azure (ACR) e Serviço de Kubernetes do Azure (AKS).
 + Exercício 2: criar imagens de contêiner do Linux e do Windows e armazená-las no Registro de Contêiner do Azure.
-+ **Exercício 3: implantar imagens de contêiner em Serviço de Kubernetes do Azure.**
-+ Exercício 4: examinar a implantação e desprovisionar todos os recursos.
++ **Exercício 3: implantar imagens de contêiner no Serviço de Kubernetes do Azure.**
++ Exercício 4: Examinar a implantação e desprovisionar todos os recursos.
 
 Neste exercício, você deve implantar imagens de contêiner no Serviço de Kubernetes do Azure.
 
 ## Exercício 3: implantar as imagens de contêiner no AKS 
 Neste exercício, você implantará duas imagens de contêiner criadas anteriormente neste exercício no cluster do AKS.
 >**Observação**: para concluir este exercício, você precisará de uma [assinatura do Azure](https://azure.microsoft.com/free/).
-> Para todas as propriedades que não forem especificadas, utilize o valor padrão.
-> **Observação:** antes de prosseguir com este exercício, certifique-se de que o provisionamento do cluster do AKS tenha sido concluído com êxito.
+> Para quaisquer propriedades que não sejam especificadas, use o valor padrão.
+> **Observação:** Antes de prosseguir com este exercício, certifique-se de que o provisionamento do cluster do AKS tenha sido concluído com êxito.
 
 ### Tarefa 1: criar namespaces personalizados do AKS
 Nesta tarefa, você criará dois namespaces no cluster do AKS que você criou anteriormente nesse laboratório.
